@@ -68,7 +68,7 @@ public class GroupRPS {
         // ターン開始
         while (playerParty < 5 && pcParty < 5) {
             // パーティーの宣言
-            if (playerParty == 0 && pcParty == 0) {
+            if (playerParty == 0 && pcParty == 0 && !lastIsDraw) {
                 System.out.println("【じゃんけん開始】");
                 System.out.println("「プレイヤーチームとPCチームの先鋒は前へ」");
             } else if (!lastIsDraw && lastLoserIsPlayer) {
